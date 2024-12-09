@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>My People</h1>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <table>
+            <tr>
+            <th>
+                <h2>The Trio</h2>
+                <object data=booger_joogers.mp4 height="580" width="320"></object> 
+            </th>
+            <th>
+                <h2>Ry Goat</h2>
+                <img src=ryan.jpeg alt="This is my image." height="580px"/> 
+            </th>
+            <th>
+                <h2>breamer and my daugher</h2>
+                <img src=my_gals.jpg alt="This is my image." height="580px"/> 
+            </th>
+            </tr>
+
+        <button id="home">Home</button>
+
+        <script>
+            
+            $(document).ready(function () {
+                $("#home").on("click", function () {
+                window.location.href = "page1.html";
+            });
+        });
+        </script>
+    </body>
+</html>

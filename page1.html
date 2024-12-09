@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<h1>Katie Kubota</h1>
+<h2>Digital Portfolio</h2>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h2>A bit about me</h2>
+<table>
+    <tr>
+      <th id="hobbies">
+        <a href=hobbies.html>
+        <img src=katie_cutout.png alt="This is my image." height="580px" class="hover_effect" class = "glowing-image"/>
+        </a> 
+        <h2>Hobbies</h2>
+        </th>
+      <th id="my people">
+        <a href=people.html>
+        <img src=katie_running.png alt="This is my second image." height="580px" class="hover_effect"/>
+        </a>
+        <h2>My People</h2></th>
+      <th id="resume">
+        <a href=resume.html>
+        <img src=beach_katie.png alt="My third image." height="580px" class="hover_effect"/>
+        </a>
+        <h2>Resume</h2></th>
+        
+    </tr>
+    
+</table>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js">
+  $(document).ready(function () {
+    setInterval(function () {
+        $("#hobbies").css("color", function (_, currentColor) {
+          return currentColor === "rgb(255, 192, 203)" ? "green" : "pink";
+      });
+    }, 500); // Change color every 500 milliseconds
+  });
+</script>
+
+</body> 
+</html>

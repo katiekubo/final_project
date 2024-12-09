@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(207, 160, 234);
+  }
+  
+h1 {
+    color: rgb(74, 3, 45);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-style: underline;
+    font-size: 75px;
+  }
+  
+  .column {
+    float: left;
+    padding-bottom: 0.5em;
+    width: 32%;
+    max-width: 240px; /* this is the hard coded image size in the HTML */
+    margin: auto;
+  }
+  
+  .clearboth {
+    clear: both;
+  }
+  
+  .row {
+    clear: both;
+    display: inline-block;
+
+  }
+  .hover_effect {
+    opacity: 0.8;
+  }
+   
+  .hover_effect:hover {
+    opacity: 1.0;
+  }
+  .glowing-image {
+    border-color: bisque;
+}
+  .glowing-image:hover {
+    width: 300px;
+    border-radius: 10px; /* Optional: Rounds the corners */
+    box-shadow: 0 0 20px 10px rgba(0, 255, 255, 0.7), 
+                0 0 30px 20px rgba(0, 255, 255, 0.5); /* Glowing effect */
+}
